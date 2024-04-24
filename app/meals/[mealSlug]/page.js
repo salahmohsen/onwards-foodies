@@ -14,7 +14,11 @@ const MealDetailsPage = ({ params }) => {
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image src={meal.image} alt={meal.title} fill />
+          <Image
+            src={`https://salahmohsen-nextjs-nextlevelfood-users-image.s3.eu-north-1.amazonaws.com/${meal.image}`}
+            alt={meal.title}
+            fill
+          />
         </div>
         <div className={classes.headerText}>
           <h1>{meal.title}</h1>
